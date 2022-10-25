@@ -3,6 +3,7 @@ using MoralisUnity.Kits.AuthenticationKit;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MoralisUnity.Demos.Introduction
 {
@@ -13,7 +14,7 @@ namespace MoralisUnity.Demos.Introduction
         private GameObject authenticationKitObject = null;
 
         [SerializeField]
-        private GameObject congratulationUiObject = null;
+        private GameObject signedInUiObject = null;
 
         [SerializeField]
         private GameObject fireworksObject = null;
@@ -24,10 +25,11 @@ namespace MoralisUnity.Demos.Introduction
         {
             authKit = authenticationKitObject.GetComponent<AuthenticationKit>();
         }
+
         public void Authentication_OnConnect()
         {
             authenticationKitObject.SetActive(false);
-            congratulationUiObject.SetActive(true);
+            signedInUiObject.SetActive(true);
             fireworksObject.SetActive(true);
         }
 
@@ -37,8 +39,17 @@ namespace MoralisUnity.Demos.Introduction
             authKit.Disconnect();
 
             authenticationKitObject.SetActive(true);
-            congratulationUiObject.SetActive(false);
+            signedInUiObject.SetActive(false);
             fireworksObject.SetActive(false);
+        }
+
+        public void ContinueButton_OnClick()
+        {
+            authenticationKitObject.SetActive(false);
+            signedInUiObject.SetActive(false);
+            fireworksObject.SetActive(false);
+
+            SceneManager.LoadScene("Playground");
         }
     }
 }
