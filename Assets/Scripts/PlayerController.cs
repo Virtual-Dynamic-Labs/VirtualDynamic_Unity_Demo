@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         bool groundedPlayer = controller.isGrounded;
-        controller.center.Set(0f, 1.07f, 0f);
 
         if (groundedPlayer)
         {
