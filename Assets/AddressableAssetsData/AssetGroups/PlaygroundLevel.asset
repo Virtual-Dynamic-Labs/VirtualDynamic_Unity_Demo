@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: PlaygroundLevel
+  m_EditorClassIdentifier: 
+  m_GroupName: PlaygroundLevel
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 6bfaa2433ce898b4cab70cefa6369fb4
+  m_SerializeEntries:
+  - m_GUID: bb6b157521dc27a44a60870e1c3dd486
+    m_Address: Assets/rezus13_assets/PBR free sword 1/Prefabs/Sword1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e636aaec201c95346a9ce3a85df12fec, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f2da0c31122f7114e8df54cdcde184f4, type: 2}
+    - {fileID: 11400000, guid: 4ebf72f27f1d9a04fa2da608a7f341d4, type: 2}
